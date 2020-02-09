@@ -1,0 +1,814 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", "sans-serif";
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+/* Propriétés générales */
+
+h1, h2, h3, h4 {
+	font-weight: 700;
+}
+
+p, a {
+	font-weight: 400;
+	line-height: 1.9em;
+}
+
+h2, h3 {
+	color: black;
+}
+
+h4, p, a {
+	color: #454545;
+}
+
+h4, p {
+	font-size: 0.9em;
+}
+
+h1 {
+	color: white;
+	font-size: 2.9em;
+	margin: 0;
+}
+
+h2 {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+a {
+	font-size: 1em;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+#slider, #services, #projects, #contact {
+	position: relative;
+}
+
+#slider_flag, #services_flag, #projects_flag, #contact_flag {
+	position: absolute;
+}
+
+#slider_flag {
+	top: -6.5em;
+}
+
+#services_flag, #projects_flag {
+	top: -3em;
+}
+
+#contact_flag {
+	top: -6em;
+}
+
+#services, #projects {
+	padding: 4em 8em;
+}
+
+.btn_submit {
+	background-color: #5c91a8;
+	font-weight: 400;
+	color: #FFFFFF;
+	font-size: 1em;
+	border-top: 0.1em #5c91a8 solid;
+	border-left: 0.1em #5c91a8 solid;
+	border-right: 0.1em #5c91a8 solid;
+	border-bottom: 0.2em #446d7f solid;
+	padding: 0.8em 0.8em 0.6em 0.8em;
+	border-radius: 0.2em;
+}
+
+.description {
+	text-align: center;
+	padding: 0 18em;
+}
+
+/* Mise en forme la Navbar */
+
+header {
+	padding: 1em 9em;
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+nav ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	padding-right: 2.5em;
+}
+
+nav ul a {
+	text-align: right;
+	margin: 0 0.8em;
+	color: #999999;
+}
+
+nav ul a:hover, nav ul a:focus {
+	color: #454545;
+	padding-top: 2.2em;
+	border-top: 0.2em #5c91a8 solid;
+}
+
+/* Mise en forme du slider */
+
+.slider_images {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.slider_images img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.presentation {
+	position: absolute;
+	top: 20%;
+	left: 11%;
+	padding: 3em 0;
+}
+
+.presentation h1 {
+	margin-bottom: 0;
+	max-width: 60%;
+}
+
+.presentation p {
+	color: #FFFFFF;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+}
+
+h1 span {
+	color: #5c91a8;
+}
+
+.chevron {
+	font-size: 1.5em;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: calc(50% - 1.5em);
+}
+
+.chevron_left {
+	left: -1.5em;
+}
+
+.chevron_right {
+	right: -1.5em;
+}
+
+.chevron i {
+	position: absolute;
+	top: calc(50% - 12px);
+}
+
+.chevron_left i {
+	left: 1.8em;
+}
+
+.chevron_right i {
+	right: 1.8em;
+}
+
+.timeline {
+	width: 100%;
+	height: 0.28em;
+	background-color: rgba(0, 0, 0, 0.05);
+	position: absolute;
+	left: 0;
+	bottom: 0em;
+}
+
+.timeline_full {
+	width: 10%;
+	background-color: #5c91a8;
+}
+
+/* Mise en forme du bloc services */
+
+.separator {
+	position: relative;
+}
+
+.services_infos {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	padding: 3em 0 0 0;
+}
+
+.services_feature img {
+	width: 100%;
+	margin-right: 22em;
+} 
+
+.services_list {
+	padding-top: 5em;
+}
+
+.services_list li {
+	position: relative;
+}
+
+.puce {
+	width: 4em;
+	height: 4em;
+	background-color: #FFFFFF;
+	border: 0.1em #e0dede solid;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+}
+
+.fa-chart-line, .fa-cubes, .fa-chart-pie, .fa-circle{
+	color: #5c91a8;
+}
+
+.fa-chart-line, .fa-cubes, .fa-chart-pie {
+	font-size: 2em;
+	position: absolute;
+	bottom: 0.5em;
+	left: 0.5em;
+}
+
+.fa-circle {
+	font-size: 0.6em;
+	border: 0.2em #FFFFFF solid;
+	border-radius: 50%;
+}
+
+.fa-circle-big {
+	font-size: 0.9em;
+	position: absolute;
+	left: calc(50% - 0.6em);
+	bottom: -0.6em;
+}
+
+.fa-circle-little {
+	font-size: 0.8em;
+	position: absolute;
+	bottom: 1.8em;
+	left: 4.2em;
+}
+
+hr {
+	width: 15%;
+	height: 0.15em;
+	background-color: #e0dede;
+	border: none;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.services_list_description {
+	margin-left: 7em;
+	margin-bottom: 2em;
+}
+
+.services_list h3 {
+	margin-bottom: -0.5em;
+}
+
+/* Mise en forme du bloc projets */
+
+#projects {
+	background-color: #f4f7f9;
+}
+
+.project_menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 3em 0 1em 0;
+}
+
+.project_menu li {
+	position: relative;
+}
+
+.project_menu li:first-child a {
+	background-color: #5c91a8;
+	color: #FFFFFF;
+	border-bottom: 0.2em #446d7f solid;
+	padding: 0.8em 0.8em 0.6em 0.8em;
+	border-top-left-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
+}
+
+.project_menu li:last-child a {
+	border-top-right-radius: 0.2em;
+	border-bottom-right-radius: 0.2em;
+}
+
+.project_menu li:nth-child(2) a, .project_menu li:nth-child(3) a, .project_menu li:nth-child(4) a {
+	background-color: #e0dede;
+	padding: 0.8em;
+}
+
+.project_menu li a:hover {
+	background-color: #5c91a8;
+	color: #FFFFFF;
+	border-bottom: 0.2em #446d7f solid;
+	padding: 0.8em 0.8em 0.6em 0.8em;
+}
+
+.inactive .caret_down {
+	display: none;
+}
+
+.project_menu li:hover .caret_down, .active .caret_down {
+	display: block;
+	position: absolute;
+	top: calc(0.55em + 12px);
+	left: calc(50% - 7.5px);
+	font-size: 1.5em;
+	color: #446d7f;
+}
+
+#projects_list {
+	margin-top: 3em;
+	margin-bottom: 4em;
+}
+
+#projects_list ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+
+#projects_list li {
+	margin: 1em;
+}
+
+figure {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.project_img {
+	width: 100%;
+	display: block;
+}
+
+figcaption {
+	width: 100%;
+	padding: 0.5em 1em;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+figure:hover figcaption {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+
+figcaption h3, figcaption p {
+	margin: 0;
+	padding-right: 2em;
+	color: white;
+	overflow: auto;
+	max-height: 1.6em;
+}
+
+figcaption h3 {
+	padding-top: 0.2em;
+	padding-bottom: 0;
+}
+
+figcaption p {
+	padding-bottom: 0.5em;
+}
+
+.discover {
+	display: none;
+}
+
+figure:hover .discover {
+	display: block;
+	position: absolute;
+	bottom: calc(50% + 11.52px);
+	right: 2.5em;
+}
+
+.discover_link {
+	width: 3em;
+	height: 3em;
+	background-color: #5c91a8;
+	border: 0.1em #FFFFFF solid;
+	border-radius: 50%;
+}
+
+.fa-eye {
+	font-size: 1.4em;
+	color: #FFFFFF;
+	position: absolute;
+	top: calc(50% - 11.5px);
+	left: calc(50% - 12.6px);
+}
+
+/* Mise en forme du bloc contact */
+
+#contact {
+	background: url("images/4_contact/map.png") no-repeat;
+	background-size: cover;
+	border: 0.01em transparent solid;
+	padding: 0;
+	position: relative;
+}
+
+.blue_filter {
+	background-color: rgba(0, 191, 255, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact_info {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 30%;
+	padding: 1.5em;
+	margin: 3em;
+	margin-left: 57%;
+	position: relative;
+}
+
+.contact_info iframe {
+	display: none;
+}
+
+.contact_info h3 {
+	font-size: 1.4em;
+	margin: 0;
+}
+
+.contact_info h4 {
+	margin: 1em 0 0 0;
+}
+
+.contact_info p {
+	margin: 0 0 1em 0;
+	line-height: 1.5em;
+}
+
+.contact_info p span {
+	border-bottom: 0.1em black dotted;
+}
+
+.contact_info form {
+	margin-right: 0.8em;
+}
+
+.info_perso {
+	width: 98%;
+	padding: 0.2em 0.8em;
+	color: #454545;
+	font-family: "Roboto";
+	font-size: 1em;
+	line-height: 1.9em;
+	font-weight: 400;
+	border: 0.1em #e0dede solid ;
+	border-radius: 0.3em;
+}
+
+/* Media Queries */
+
+	/* Desktops */
+
+@media all and (max-width: 1224px) {
+	#services, #projects {
+		padding: 4em 2em;
+	}
+
+	#contact {
+		padding: 4em 0;
+	}
+
+	#slider_flag {
+	top: -9.5em;
+	}
+
+	#services_flag, #projects_flag {
+	top: -5em;
+	}
+
+	#contact_flag {
+	top: -9em;
+	}
+
+	.description {
+		padding: 0 10em;
+	}
+
+	header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	nav ul {
+		margin-bottom: 0;
+	}
+
+	nav ul a:hover, nav ul a:focus {
+		padding-top: 0.8em;
+	}
+
+	.presentation {
+		top: 15%;
+	}
+
+	.services_infos {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding: 1em 0;
+	}
+
+	.services_feature img {
+		margin-right: 0;
+	}
+
+	.services_list {
+		padding: 0 1em;
+	}
+
+	.puce {
+		top: 0;
+	}
+
+	#projects_list {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+
+	#projects_list ul {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.contact_info {
+		width: 50%;
+		margin: auto;
+	}
+}
+
+@media all and (max-width: 990px) {
+	
+	h1 {
+		font-size: 2.3em;
+	}
+
+	h2 {
+		font-size: 2.2em;
+	}
+
+	#services {
+		padding: 2em 2em 0 2em;
+	}
+
+	#projects {
+		padding: 2em 2em 1em 2em;
+	}
+
+	#contact {
+		padding: 2em;
+		background: none;
+	}
+
+	.blue_filter {
+		display: none;
+	}
+
+	#services_flag, #projects_flag, #contact_flag {
+		top: -7em;
+	}
+
+	.description {
+		padding: 0;
+	}
+
+	.presentation {
+		position: static;
+		background-color: #454545;
+		text-align: center;
+		padding: 3em;
+	}
+
+	.presentation h1 {
+		max-width: 100%;
+	}
+
+	.slider_images {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.chevron {
+		height: 100%;
+		top: 0;
+		border-radius: 0;
+	}
+
+	.project_menu {
+	padding: 3em 0 0 0;
+	}
+
+	iframe {
+		padding-top: 3em;
+	}
+
+	.contact_info {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+
+	.contact_info iframe {
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+
+	.contact_info h3, .contact_info h4, .contact_info p {
+		text-align: center;
+	}
+
+	.contact_info h3 {
+		margin-top: 2em;
+	}
+
+	.contact_info p {
+		margin-bottom: 2em;
+	}
+}
+
+	/* Tablettes */
+
+@media all and (max-width: 768px) {
+
+	#projects_list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin-top: 4em;
+	}
+
+	figcaption{
+		display: block;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.discover {
+		display: block;
+		position: absolute;
+		bottom: calc(50% + 11.52px);
+		right: 2.5em;
+	}
+
+	.project_menu li:hover .caret_down, .active .caret_down {
+	display: none;
+	}
+
+}	
+
+	/* Mobiles */
+
+@media all and (max-width: 414px) {
+	
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2 {
+		font-size: 1.7em;
+	}
+
+	nav ul a {
+	font-size: 0.9em;
+	}
+
+	#services, #contact {
+		padding: 2em 2em;
+	}
+
+	#projects {
+		padding: 2em 2em 0.2em 2em;
+	}
+
+	.services_list, .services_list li {
+		padding: 0;
+		margin: 0;
+	}
+
+	.puce {
+		display: none;
+	}
+
+	.services_list_description {
+		margin: 1em;
+	}
+
+	.project_menu a {
+		font-size: 0.7em;
+	}
+
+	iframe {
+		padding-top: 2.5em;
+	}
+
+	.contact_info form {
+		margin-right: 1.5em;
+	}
+}
